@@ -104,4 +104,12 @@ In this project, Kinect only reads data from User Right Shoulder and Right Elbow
 
 In the code, the mathematics has 2 parts, Right Shoulder Rotation Matrix and Right Elbow Rotation Matrix.
 
-Right Shoulder Rotation Matrix divided into Shoulder Pitch and Shoulder Raw.
+Right Shoulder Rotation Matrix divided into Shoulder Pitch and Shoulder Raw. Shoulder pitch is calculated from Arctan of Position of Shoulder and Elbow in Z and X coordinate. Shouler Raw is calculated from Arctan of Position of Shoulder and Elbow in Y and X coordinate.
+
+Right Elbow Rotation Matrix is calculated from Rotation Matrix from Shoulder's Absolute Rotation Matrix to Elbow's Absolute Rotation Matrix. This Absolute Rotation Matrix means the rotation of the joint from Kinect. Kinect provides data in Quaternion. So, the code has to transfer it to Cartesian coordinates. Finally, this Rotation matrix contains Raw, Pitch, Yaw angle that the code transfer them to Pepper Robot.
+
+Rviz can provide the images of X, Y, Z coordinate of Human joints.
+
+Hope this project is easy to undertand and shorten your time to start your project.
+If you have any question, please feel free to ask at
+ketchart.kaewplee@gmail.com
