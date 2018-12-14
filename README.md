@@ -95,6 +95,7 @@ rosrun kinect_pj_v3 kinect_pj_v3
 ********************************************************************************************************************
 
 This project purpose is to initialize Kinect to mimic Human movements for Pepper Robot which can be used further in Machine Learning. 
+このプロジェクトの目的は、機械学習でさらに使用できるPepper Robotのための人間の動きを模倣するためにKinectを初期化することです。
 
 Pepper Robot is not industrial robot that we can pull his arm to teach him some movements. Therefore, he has to learn by watching our movements.
 
