@@ -107,13 +107,19 @@ In this project, Kinect only reads data from User Right Shoulder and Right Elbow
 このプロジェクトでは、KinectはUser Right ShoulderとRight Elbowからのみデータを読み込みます。
 
 In the code, the mathematics has 2 parts, Right Shoulder Rotation Matrix and Right Elbow Rotation Matrix.
+コードでは、数学は2つの部分、Right Shoulder Rotation MatrixとRight Elbow Rotation Matrixを持っています。
 
 Right Shoulder Rotation Matrix divided into Shoulder Pitch and Shoulder Raw. Shoulder pitch is calculated from Arctan of Position of Shoulder and Elbow in Z and X coordinate. Shouler Raw is calculated from Arctan of Position of Shoulder and Elbow in Y and X coordinate.
+Right Shoulder Rotation MatrixはShoulder PitchとShoulder Rawに分かれています。 Shoulder Pitchは、Z と X coordinateにおける肩の位置および肘のArctanから計算される.SRは、Y と X coordinateの肩および肘の位置のArctanから計算される。
 
 Right Elbow Rotation Matrix is calculated from Rotation Matrix from Shoulder's Absolute Rotation Matrix to Elbow's Absolute Rotation Matrix. This Absolute Rotation Matrix means the rotation of the joint from Kinect. Kinect provides data in Quaternion. So, the code has to transfer it to Cartesian coordinates. Finally, this Rotation matrix contains Raw, Pitch, Yaw angle that the code transfer them to Pepper Robot.
+Right Elbow Rotation Matrixは、ShoulderのAbsolute Rotation MatrixからElbowのAbsolute Rotation MatrixまでのRotation Matrixから計算されます。 このAbsolute Rotation Matrixは、Kinectからジョイントを回転させることを意味します。 KinectはQuaternionでデータを提供します。 したがって、コードはそれをCartesian coordinatesに転送する必要があります。 最後に、このRotation matrixにはRaw、Pitch、Yawの角度が含まれており、コードはPepper Robotにコードを転送します。
 
 Rviz can provide the images of X, Y, Z coordinate of Human joints.
+Rvizは、人間の関節のX、Y、Z coordinateの画像を提供することができます。
 
 Hope this project is easy to undertand and shorten your time to start your project.
 If you have any question, please feel free to ask at
+このプロジェクトが理解しやすく、プロジェクトを開始するための時間を短縮したいと願っています。
+ご不明な点がございましたら、お気軽にお問い合わせください
 ketchart.kaewplee@gmail.com
