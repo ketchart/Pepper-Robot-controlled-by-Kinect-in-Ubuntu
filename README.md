@@ -94,4 +94,14 @@ rosrun kinect_pj_v3 kinect_pj_v3
 
 ********************************************************************************************************************
 
-This project purpose is to use 
+This project purpose is to initialize Kinect to mimic Human movements for Pepper Robot which can be used further in Machine Learning. 
+
+Pepper Robot is not industrial robot that we can pull his arm to teach him some movements. Therefore, he has to learn by watching our movements.
+
+Kinect is a tool of choice for this because it can read human joints which its data will transfer to Peppr Robot.
+
+In this project, Kinect only reads data from User Right Shoulder and Right Elbow.
+
+In the code, the mathematics has 2 parts, Right Shoulder Rotation Matrix and Right Elbow Rotation Matrix.
+
+Right Shoulder Rotation Matrix divided into Shoulder Pitch and Shoulder Raw.
