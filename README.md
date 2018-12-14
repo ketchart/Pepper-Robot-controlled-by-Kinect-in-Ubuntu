@@ -90,7 +90,7 @@ source setup.bash
 or 
 source ~/catkin_ws/devel/setup.bash
 
-rosrun kinect_pj_v3 kinect_pj_v3
+rosrun kinect_pj kinect_pj
 
 ********************************************************************************************************************
 
