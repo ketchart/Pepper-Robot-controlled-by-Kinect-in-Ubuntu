@@ -83,7 +83,7 @@ roscreate-pkg kinect_pj rospy tf
 cd ~/home/chong-lab/catkin_ws/src/kinect_pj/src
 chmod +x kinect_pj
 
-// launch kinect_pj_v3
+// launch kinect_pj
 
 cd ~/catkin_ws/devel
 source setup.bash 
