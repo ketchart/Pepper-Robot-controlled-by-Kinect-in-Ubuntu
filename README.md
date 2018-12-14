@@ -98,10 +98,13 @@ This project purpose is to initialize Kinect to mimic Human movements for Pepper
 このプロジェクトの目的は、機械学習でさらに使用できるPepper Robotのための人間の動きを模倣するためにKinectを初期化することです。
 
 Pepper Robot is not industrial robot that we can pull his arm to teach him some movements. Therefore, he has to learn by watching our movements.
+Pepper Robotは工業用ロボットではなく、腕を伸ばして何らかの動きを教えることができます。 したがって、彼は私たちの動きを見て学ばなければなりません。
 
 Kinect is a tool of choice for this because it can read human joints which its data will transfer to Peppr Robot.
+Kinectは、そのデータがPepper Robotに転送される人間の関節を読み取ることができるため、これのための選択ツールです。
 
 In this project, Kinect only reads data from User Right Shoulder and Right Elbow.
+このプロジェクトでは、KinectはUser Right ShoulderとRight Elbowからのみデータを読み込みます。
 
 In the code, the mathematics has 2 parts, Right Shoulder Rotation Matrix and Right Elbow Rotation Matrix.
 
