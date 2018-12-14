@@ -91,3 +91,7 @@ or
 source ~/catkin_ws/devel/setup.bash
 
 rosrun kinect_pj_v3 kinect_pj_v3
+
+********************************************************************************************************************
+
+This project purpose is to use 
