@@ -115,13 +115,21 @@ If you have any question, please feel free to ask at
 ketchart.kaewplee@gmail.com
 
 このプロジェクトの目的は、機械学習でさらに使用できるPepper Robotのための人間の動きを模倣するためにKinectを初期化することです。
+
 Pepper Robotは工業用ロボットではなく、腕を伸ばして何らかの動きを教えることができます。 したがって、彼は私たちの動きを見て学ばなければなりません。
+
 Kinectは、そのデータがPepper Robotに転送される人間の関節を読み取ることができるため、これのための選択ツールです。
+
 このプロジェクトでは、KinectはUser Right ShoulderとRight Elbowからのみデータを読み込みます。
+
 コードでは、数学は2つの部分、Right Shoulder Rotation MatrixとRight Elbow Rotation Matrixを持っています。
+
 Right Shoulder Rotation MatrixはShoulder PitchとShoulder Rawに分かれています。 Shoulder Pitchは、Z と X coordinateにおける肩の位置および肘のArctanから計算される.SRは、Y と X coordinateの肩および肘の位置のArctanから計算される。
+
 Right Elbow Rotation Matrixは、ShoulderのAbsolute Rotation MatrixからElbowのAbsolute Rotation MatrixまでのRotation Matrixから計算されます。 このAbsolute Rotation Matrixは、Kinectからジョイントを回転させることを意味します。 KinectはQuaternionでデータを提供します。 したがって、コードはそれをCartesian coordinatesに転送する必要があります。 最後に、このRotation matrixにはRaw、Pitch、Yawの角度が含まれており、コードはPepper Robotにコードを転送します。
+
 Rvizは、人間の関節のX、Y、Z coordinateの画像を提供することができます。
+
 このプロジェクトが理解しやすく、プロジェクトを開始するための時間を短縮したいと願っています。
 ご不明な点がございましたら、お気軽にお問い合わせください
 ketchart.kaewplee@gmail.com
