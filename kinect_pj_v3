@@ -57,9 +57,9 @@ if __name__ == '__main__':
 			right_elbow_y = right_elbow_trans[1]
 			right_elbow_z = right_elbow_trans[2]
 			shoulder_pitch = math.atan2( -right_elbow_z + right_shoulder_z , -right_elbow_x + right_shoulder_x) 
-			shoulder_row = math.atan2( -right_elbow_y + right_shoulder_y , -right_elbow_x + right_shoulder_x)
+			shoulder_raw = math.atan2( -right_elbow_y + right_shoulder_y , -right_elbow_x + right_shoulder_x)
 			rot = RotFromQua(right_shoulder_rot,right_elbow_rot)
-			rotate(shoulder_pitch , shoulder_row , rot[0], -rot[2])			
+			rotate(shoulder_pitch , shoulder_raw , rot[0], -rot[2])			
 		except (tf.LookupException, tf.ConnectivityException, tf.ExtrapolationException):
 			continue
 		rate.sleep()
