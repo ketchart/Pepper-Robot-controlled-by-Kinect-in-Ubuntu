@@ -1,4 +1,6 @@
 # Pepper-Robot-controlled-by-Kinect-in-Ubuntu
+// DOI https://doi.org/10.5281/zenodo.3828158
+
 // reference https://www.reddit.com/r/ROS/comments/6qejy0/openni_kinect_installation_on_kinetic_indigo/?fbclid=IwAR0Mj1RDO11DIJkw4KNb7wYoZ8X13c7HmV9LhSNYXNANyxDRDKXviXtrl8k
 
 // install
